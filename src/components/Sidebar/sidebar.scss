@@ -74,6 +74,11 @@ a.skills-link{
         content:'SKILLS'
     }
 }
+a.projects-link{
+    &:after{
+        content:'MY WORK'
+    }
+}
 a.about-link{
     &:after {
         content : 'ABOUT';
