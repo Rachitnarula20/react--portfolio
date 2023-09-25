@@ -1,9 +1,7 @@
 import { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import './about.scss'
-import Photo from './Avatar/avatar'
-// import Avatar from './Avatar/avatar'
-
+import Avatar from './Avatar/avatar'
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -45,7 +43,7 @@ const About = () => {
                tech-obsessed!!!''
             </p>
           </div>  
-          <Photo />
+          <Avatar />
         </div>
         </>
 )
