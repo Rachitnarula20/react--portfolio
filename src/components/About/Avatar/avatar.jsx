@@ -5,7 +5,7 @@ const Avatar = () => {
   return (
     <div className='logo-rachit'>
       <img
-        className="solid-logo"
+        className="solid-logo fade-in"
         src={LogoS}
         alt="JavaScript,  Developer"
       />
