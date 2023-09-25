@@ -17,13 +17,13 @@ const portfolioData = [
     id: 2,
     name: 'Shopping Cart',
     image: ImageTwo,
-    link: 'https://rachitnarula20.github.io/shopping_cart/',
+    link: 'https://shopping-cart-mh09.onrender.com',
   },
   {
     id : 3,
     name: 'Portfolio',
     image: ImageThree,
-    link: 'rachitnarula-portfolio.netlify.app',
+    link: 'https://rachitnarula-portfolio.netlify.app/',
 
   }
 ]
