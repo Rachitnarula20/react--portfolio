@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom'
-// import LogoTitle from '../../assets/images/logo-r(4).png'
 import './home.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
-import Logo from './Logo/logo';
+import RLogo from './RLogo/RLogo';
+// import Logo from './Logo/logo';
+// import '../Home/Logo/logo'
+// import '../Home/Logo/logo.scss'
 
 
 const Home = () => {
@@ -49,7 +51,7 @@ return(
             <br /> 
            <span className={`${letterClass} _13`}>I</span> 
            <span className={`${letterClass} _14`}>'m</span> 
-        {/* <img src={LogoTitle} alt="developer" /> */}
+        
        <AnimatedLetters letterClass={letterClass}
        strArray={nameArray}
        idx={15} />
@@ -61,7 +63,7 @@ return(
         <h2>Frontend Developer | Javascript Expert | FreeLancer </h2>
         <Link to="/contact" className='flat-button'>CONTACT ME</Link>
         </div>
-        <Logo />
+        <RLogo />
     </div>
     </>
 )

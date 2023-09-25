@@ -1,8 +1,7 @@
-.logo-container {
-    z-index: 0;
+.logo-rachit {
+    z-index: 1;
     width: 400px;
     height: 609px;
-    opacity: 0;
     position: absolute;
     top: 0;
     right: 15%;
@@ -18,7 +17,7 @@
       left: 0;
       margin: auto;
       width: 100%;
-      opacity: 0;
+      display: block;
     //   transform: rotateZ(30deg) !important;
       z-index: 1;
     }
