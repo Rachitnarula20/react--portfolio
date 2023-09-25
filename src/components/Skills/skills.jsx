@@ -30,17 +30,10 @@ const Skills = () => {
               />
             </h1>
             <p>
-              I'm a very ambitious front-end developer looking for a role in an
-              established IT company with the opportunity to work with the latest
-              technologies on challenging and diverse projects.
+            Expert in front-end development including technologies like <span  className="tech-tag">HTML5</span>, <span className="tech-tag">CSS3</span>,<span className="tech-tag">JavaScript</span>, <span className="tech-tag">jQuery</span>,<span className="tech-tag">Git</span>, <span className="tech-tag">GitHub</span>,<span className="tech-tag">Bootstrap</span>,<span className="tech-tag">Sass</span> , <span className="tech-tag">Emailjs</span> etc.
             </p>
             <p align="LEFT">
-              I'm quiet confident and perpetually working on
-              improving my chops one design problem at a time.
-            </p>
-            <p>
-              If I need to define myself in one word that would be a 
-               tech-obsessed!!!''
+            I'm not a designer but I have a good sense of aesthetics, and experience in responsive, mobile-first web design. I put special effort into optimizing my code and providing the best user experience. I would love to give you any kind of support also after the project's completion. I guarantee a commitment during work on your project.
             </p>
           </div> 
           <Cube /> 
