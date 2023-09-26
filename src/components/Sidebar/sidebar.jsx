@@ -51,17 +51,17 @@ const Sidebar = () => {
         </nav >
         <ul>
             <li>
-                <a target='_blank' rel='noreferrer' href='#'>
+                <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/rachit-narula-3146a9257/'>
                     <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e' />
                 </a>
             </li>
             <li>
-                <a target='_blank' rel='noreferrer' href='#'>
+                <a target='_blank' rel='noreferrer' href='https://github.com/Rachitnarula20'>
                     <FontAwesomeIcon icon={faGithub} color='#4d4d4e' />
                 </a>
             </li>
             <li>
-                <a target='_blank' rel='noreferrer' href='#'>
+                <a target='_blank' rel='noreferrer' href='https://www.instagram.com/rachit.narula/'>
                     <FontAwesomeIcon icon={faInstagram} color='#4d4d4e' />
                 </a>
             </li>
