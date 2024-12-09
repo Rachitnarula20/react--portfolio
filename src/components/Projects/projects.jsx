@@ -12,21 +12,27 @@ const portfolioData = [
     name: 'WSI Viewer',
     image: ImageOne,
     link: 'https://wsi-viewer-pink.vercel.app/',
+    description:
+      'A Whole Slide Image (WSI) Viewer built with React and Tailwind CSS. It features metadata panels, an overview hub, and an interactive zoomable center panel for seamless exploration.'
   },
   {
     id: 2,
-    name: 'Shopping Cart',
+    name: 'Owltics',
     image: ImageTwo,
-    link: 'https://shopping-cart-mh09.onrender.com',
+    link: 'https://owltics.com/',
+    description:
+      'A data-driven analytics platform offering intuitive dashboards, real-time data visualization, and comprehensive tools to track and optimize business performance metrics.'
   },
   {
-    id : 3,
+    id: 3,
     name: 'Portfolio',
     image: ImageThree,
     link: 'https://rachitnarula-portfolio.netlify.app/',
-
+    description:
+      'A personal portfolio website showcasing web development skills, projects, and professional achievements, with a modern design and user-friendly interface.'
   }
 ]
+
 const Projects = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const [hoveredValue, setHoveredValue] = useState(null)
@@ -41,7 +47,6 @@ const Projects = () => {
     }, 3000)
 
     return () => {
-      // Clean up the timeout if the component unmounts before it triggers.
       clearTimeout(timeoutId)
     }
   }, [])
@@ -59,31 +64,32 @@ const Projects = () => {
           </h1>
         </div>
         
-        <div className='projects-container' style={{}}>
-            <div className="portfolio__content__cards">
-          {portfolioData.map((item, index) => (
-            <div
-              className="portfolio__content__cards__item"
-              key={`cardItem${item.name.trim()}`}
-              onMouseEnter={() => handleHover(index)}
-              onMouseLeave={() => handleHover(null)}
-            >
-              <div className="portfolio__content__cards__item__img-wrapper">
-                <a>
-                  <img alt="dummy data" src={item.image} />
-                </a>
-              </div>
-              <div className="overlay">
-                {index === hoveredValue && (
-                  <div >
-                    <p>{item.name}</p>
-                    <a href={item.link}><button>Visit</button></a>
+        <div className="projects-container">
+          <div className="portfolio__content__cards">
+            {portfolioData.map((item, index) => (
+              <div
+                className="portfolio__content__cards__item"
+                key={`cardItem${item.name.trim()}`}
+                onMouseEnter={() => handleHover(index)}
+                onMouseLeave={() => handleHover(null)}
+              >
+                <div className="portfolio__content__cards__item__img-wrapper">
+                  <a href={item.link} target="_blank" rel="noopener noreferrer">
+                    <img alt={item.name} src={item.image} />
+                  </a>
+                </div>
+                <div className={`overlay ${index === hoveredValue ? 'visible' : ''}`}>
+                  <div className="overlay-content">
+                    <h3>{item.name}</h3>
+                    <p>{item.description}</p>
+                    <a href={item.link} target="_blank" rel="noopener noreferrer">
+                      <button>Visit</button>
+                    </a>
                   </div>
-                )}
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
         </div>
       </section>
     </>
