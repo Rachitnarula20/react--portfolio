@@ -12,12 +12,10 @@ const Skills = () => {
         }, 3000);
     
         return () => {
-          // Clean up the timeout if the component unmounts before it triggers.
           clearTimeout(timeoutId);
         };
       }, []);
 
-  
     return (
       <>
         <div className="container skills-page">
@@ -30,15 +28,15 @@ const Skills = () => {
               />
             </h1>
             <p>
-            Expert in front-end development including technologies like <span  className="tech-tag">HTML5</span>, <span className="tech-tag">CSS3</span>,<span className="tech-tag">JavaScript</span>, <span className="tech-tag">jQuery</span>,<span className="tech-tag">Git</span>, <span className="tech-tag">GitHub</span>,<span className="tech-tag">Bootstrap</span>,<span className="tech-tag">Sass</span> , <span className="tech-tag">Emailjs</span> etc.
+            Proficient in frontend development using <span className="tech-tag">HTML5</span>, <span className="tech-tag">CSS3</span>, <span className="tech-tag">JavaScript</span>, <span className="tech-tag">React</span>, <span className="tech-tag">Redux</span>, <span className="tech-tag">jQuery</span>, <span className="tech-tag">Bootstrap</span>, and <span className="tech-tag">Tailwind CSS</span>. 
             </p>
             <p align="LEFT">
-            I'm not a designer but I have a good sense of aesthetics, and experience in responsive, mobile-first web design. I put special effort into optimizing my code and providing the best user experience. I would love to give you any kind of support also after the project's completion. I guarantee a commitment during work on your project.
+            Experienced in creating responsive and mobile-first designs, optimizing performance, and delivering user-friendly interfaces. 
             </p>
           </div> 
           <Cube /> 
         </div>
         </>
-)
+    )
 }
-export default Skills
+export default Skills;

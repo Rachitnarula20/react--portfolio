@@ -9,9 +9,9 @@ import './projects.scss'
 const portfolioData = [
   {
     id: 1,
-    name: 'DrumKit',
+    name: 'WSI Viewer',
     image: ImageOne,
-    link: 'https://rachitnarula20.github.io/Drum_Kit/',
+    link: 'https://wsi-viewer-pink.vercel.app/',
   },
   {
     id: 2,
